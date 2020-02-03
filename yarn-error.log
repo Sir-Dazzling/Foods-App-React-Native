@@ -1,8 +1,8 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\BAIHE\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add @expo/vector-icons@^10.0.0
+  C:\Program Files\nodejs\node.exe C:\Users\BAIHE\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add react-native-paper
 
 PATH: 
-  C:\Users\BAIHE\AppData\Local\Temp\yarn--1579943789651-0.9476134863388406;c:\Users\BAIHE\Documents\RN Projects\Foods App\node_modules\.bin;C:\Users\BAIHE\AppData\Local\Yarn\Data\link\node_modules\.bin;C:\Users\BAIHE\AppData\Local\Yarn\bin;C:\Program Files\libexec\lib\node_modules\npm\bin\node-gyp-bin;C:\Program Files\lib\node_modules\npm\bin\node-gyp-bin;C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\BAIHE\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\Program Files\nodejs;C:\Program Files\Git\cmd;C:\WINDOWS\System32\OpenSSH;C:\Users\BAIHE\AppData\Roaming\npm;C:\Users\BAIHE\AppData\Roaming\npm\node_modules\expo-cli;%BAIHE%\AppData\Roaming\npm;C:\Users\BAIHE\AppData\Local\Android\Sdk\platform-tools;C:\Users\BAIHE\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2\bin;C:\Users\BAIHE\AppData\Roaming\npm;C:\Users\BAIHE\AppData\Roaming\npm\node_modules\expo-cli
+  C:\Users\BAIHE\AppData\Local\Temp\yarn--1580486494539-0.7672660990008211;c:\Users\BAIHE\Documents\RN Projects\Foods App\node_modules\.bin;C:\Users\BAIHE\AppData\Local\Yarn\Data\link\node_modules\.bin;C:\Users\BAIHE\AppData\Local\Yarn\bin;C:\Program Files\libexec\lib\node_modules\npm\bin\node-gyp-bin;C:\Program Files\lib\node_modules\npm\bin\node-gyp-bin;C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\BAIHE\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\Program Files\nodejs;C:\Program Files\Git\cmd;C:\WINDOWS\System32\OpenSSH;C:\Users\BAIHE\AppData\Roaming\npm;C:\Users\BAIHE\AppData\Roaming\npm\node_modules\expo-cli;%BAIHE%\AppData\Roaming\npm;C:\Users\BAIHE\AppData\Local\Android\Sdk\platform-tools;C:\Users\BAIHE\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2\bin;C:\Users\BAIHE\AppData\Roaming\npm;C:\Users\BAIHE\AppData\Roaming\npm\node_modules\expo-cli
 
 Yarn version: 
   1.21.1
@@ -14,8 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: connect ETIMEDOUT 104.16.27.35:443
-      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1128:14)
+  Error: EPERM: operation not permitted, unlink 'c:\Users\BAIHE\Documents\RN Projects\Foods App\node_modules\@babel\compat-data\node_modules\.bin'
 
 npm manifest: 
   {
@@ -28,6 +27,7 @@ npm manifest:
       "eject": "expo eject"
     },
     "dependencies": {
+      "@expo/vector-icons": "^10.0.0",
       "@react-native-community/masked-view": "0.1.5",
       "expo": "~36.0.0",
       "react": "~16.9.0",
@@ -41,7 +41,8 @@ npm manifest:
       "react-navigation": "^4.0.10",
       "react-navigation-drawer": "^2.3.3",
       "react-navigation-header-buttons": "^3.0.4",
-      "react-navigation-stack": "^2.0.15"
+      "react-navigation-stack": "^2.0.15",
+      "react-navigation-tabs": "^2.7.0"
     },
     "devDependencies": {
       "@babel/core": "^7.0.0",
@@ -942,7 +943,7 @@ Lockfile:
       exec-sh "^0.3.2"
       minimist "^1.2.0"
   
-  "@expo/vector-icons@^10.0.2":
+  "@expo/vector-icons@^10.0.0", "@expo/vector-icons@^10.0.2":
     version "10.0.6"
     resolved "https://registry.yarnpkg.com/@expo/vector-icons/-/vector-icons-10.0.6.tgz#5718953ff0b97827d11dae5787976fa8ce5caaed"
     integrity sha512-qNlKPNdf073LpeEpyClxAh0D3mmIK4TGAQzeKR0HVwf14RIEe17+mLW5Z6Ka5Ho/lUtKMRPDHumSllFyKvpeGg==
@@ -4239,6 +4240,11 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.12.0.tgz#2cc0fe0fba742d97fd527c42a13bec4eeb06241c"
     integrity sha512-rPCkf/mWBtKc97aLL9/txD8DZdemK0vkA3JMLShjlJB3Pj3s+lpf1KaBzMfQrAmhMQB0n1cU/SUGgKKBCe837Q==
   
+  react-lifecycles-compat@^3.0.4:
+    version "3.0.4"
+    resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
+    integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
+  
   react-native-gesture-handler@~1.5.0:
     version "1.5.3"
     resolved "https://registry.yarnpkg.com/react-native-gesture-handler/-/react-native-gesture-handler-1.5.3.tgz#191b44701fab7ba54c27a2438cb5eaa252666e66"
@@ -4269,7 +4275,7 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/react-native-safe-area-context/-/react-native-safe-area-context-0.6.0.tgz#f53f5a5bcafb462a8798a26b145e68946389ad60"
     integrity sha512-blY0akr3ZLTuZFdUotmjV+7LVXpBnd5CGFlNhTiarNNGJoHu79K42IJpUpmtg75iC9aWbSW7QHstlP0xz11V0A==
   
-  react-native-safe-area-view@^0.14.1:
+  react-native-safe-area-view@^0.14.1, react-native-safe-area-view@^0.14.6:
     version "0.14.8"
     resolved "https://registry.yarnpkg.com/react-native-safe-area-view/-/react-native-safe-area-view-0.14.8.tgz#ef33c46ff8164ae77acad48c3039ec9c34873e5b"
     integrity sha512-MtRSIcZNstxv87Jet+UsPhEd1tpGe8cVskDXlP657x6rHpSrbrc+y13ZNXrwAgGNNhqQNX7UJT68ZIq//ZRmvw==
@@ -4289,6 +4295,11 @@ Lockfile:
     integrity sha512-tOxHGQUN83MTmQB4ghoQkibqOdGiX4JQEmeyEv96MKWO/x8T2PJv84ECUos9hD3blPRQwVwSpAid1PPPhrVEaw==
     dependencies:
       debounce "^1.2.0"
+  
+  react-native-tab-view@^2.11.0:
+    version "2.12.0"
+    resolved "https://registry.yarnpkg.com/react-native-tab-view/-/react-native-tab-view-2.12.0.tgz#357c8632fd16a622ab16e6965779171bb00a85d0"
+    integrity sha512-rjAicASp7RMiohZ0afjfzqbHDO9leeZCD6d9s9sXwrnf1qNiP6oixforKbmVFr+mgAfa8Q0k4kJwf1w9t0AY+A==
   
   react-native-view-shot@3.0.2:
     version "3.0.2"
@@ -4364,6 +4375,16 @@ Lockfile:
     dependencies:
       color "^3.1.2"
       react-native-iphone-x-helper "^1.2.1"
+  
+  react-navigation-tabs@^2.7.0:
+    version "2.7.0"
+    resolved "https://registry.yarnpkg.com/react-navigation-tabs/-/react-navigation-tabs-2.7.0.tgz#68505910164a51c44710f835def8fe29360f346a"
+    integrity sha512-fQEHjFrIBi+89loLL521HjGS0Z9tl4Y89SSamRkDl8Of6bPS1Ep++an3ctl2j7c3veqBZBrj3H1qa7qjd3apBQ==
+    dependencies:
+      hoist-non-react-statics "^3.3.0"
+      react-lifecycles-compat "^3.0.4"
+      react-native-safe-area-view "^0.14.6"
+      react-native-tab-view "^2.11.0"
   
   react-navigation@^4.0.10:
     version "4.0.10"
