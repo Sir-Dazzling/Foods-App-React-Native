@@ -1,6 +1,6 @@
 class Meal
 {
-    constructor(id, categoryIds, title, affordability, complexity, imageUrl, duration, ingredients, steps,isGlutenFree,isLactoseFree, isVegetarian, isVegan )
+    constructor(id, categoryIds, title, affordability, complexity, imageUrl, duration, ingredients, steps,isGlutenFree,isLactoseFree, isVegetarian, isVegan)
     {
         this.id = id;
         this.categoryIds = categoryIds;

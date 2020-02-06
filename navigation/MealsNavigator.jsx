@@ -68,10 +68,6 @@ const FiltersNavigator = createStackNavigator({
 },
 {
     defaultNavigationOptions: defaultStackNavOptions,
-    // navigationOptions: 
-    // {
-    //     drawerLabel: "Filters!!!"
-    // }
 });
 
 //Configuring the BottomTab element
