@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 import {HeaderButtons, Item} from 'react-navigation-header-buttons';
 import {useSelector} from 'react-redux';
 
@@ -10,7 +10,7 @@ import DefaultText from '../components/DefaultText';
 const FavoritesScreen = (props) => 
 {
     //Getting Meals from redcuers with Hooks
-    const favMeals= useSelector(state => state.meals.favoriteMeals);
+    const favMeals = useSelector(state => state.meals.favoriteMeals);
 
     //Rendering a default/fallback text if the Favorites meals array is empty
     if(favMeals.length === 0 || !favMeals)

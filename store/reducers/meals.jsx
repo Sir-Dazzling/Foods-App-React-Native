@@ -1,3 +1,4 @@
+import {ToastAndroid} from 'react-native';
 import {MEALS} from '../../data/dummy-data';
 import { TOGGLE_FAVORITE, SET_FILTERS } from '../actions/meals';
 
@@ -19,11 +20,14 @@ const mealsReducer = (state = initialState, action) =>
             {
                 const updateFavMeals = [...state.favoriteMeals];
                 updateFavMeals.splice(existingIndex, 1)
+                ToastAndroid.show("Removed from favorites", ToastAndroid.SHORT);
                 return { ...state, favoriteMeals: updateFavMeals};
+                
             }
             else//Adding new Food to favorites array
             { 
                 const meal = state.meals.find(meal => meal.id === action.mealId);
+                ToastAndroid.show("Added to favorites", ToastAndroid.SHORT);
                 return{...state, favoriteMeals: state.favoriteMeals.concat(meal)};
             }
         case SET_FILTERS:
