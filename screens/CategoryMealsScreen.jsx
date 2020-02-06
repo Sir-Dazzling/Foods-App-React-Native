@@ -1,17 +1,17 @@
 import React from 'react';
+import {useSelector} from 'react-redux';
 
-import {CATEGORIES, MEALS} from '../data/dummy-data';
+import {CATEGORIES} from '../data/dummy-data';
 import MealList from '../components/MealList';
 
 const CategoryMealsScreen = (props) => 
 {
     const catId = props.navigation.getParam("categoryId");
+    
+    //Getting Meals from reducers with Hooks
+    const availableMeals = useSelector(state => state.meals.filteredMeals);
 
-    //To find Category details in which user clicked on
-    //const selectedCategory = CATEGORIES.find(cat => cat.id === catId );
-
-    //To find out all the meals that belong to the category in which the user clicked on
-    const displayedMeals = MEALS.filter(meal => meal.categoryIds.indexOf(catId) >=0 )
+    const displayedMeals = availableMeals.filter(meal => meal.categoryIds.indexOf(catId) >=0 )
 
     
 
